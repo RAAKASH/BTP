@@ -19,7 +19,7 @@ model.param.set('x_1', strcat(num2str(X1),'[m]'));
 model.param.set('y_1', strcat(num2str(Y1),'[m]'));
 model.param.set('z_1', strcat(num2str(Z1),'[m]'));
 model.param.set('r_1', strcat(num2str(R1),'[m]'));
-model.param.set('R_1', '0.144/2[m]', 'Radius of the big sphere');
+model.param.set('R_1', '(0.144/)[m]', 'Radius of the big sphere');
 model.param.set('x_cp', '0[m]');
 model.param.set('y_cp', '0[m]');
 model.param.set('z_cp', '0[m]');
