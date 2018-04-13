@@ -1,1 +1,1 @@
-Ignore this code, it is erroneous.
+Ignore this code, it is erroneous and plain stupid.
