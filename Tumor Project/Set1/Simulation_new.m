@@ -2,10 +2,10 @@
 clc
 clear
 % To import or not
-importing = 1;
+importing = 0;
 if importing
     fprintf('Importing, starting server \n');
-    cd ('C:\Program Files\COMSOL\COMSOL53\Multiphysics\mli');
+    cd ('F:\Comsol\COMSOL53\Multiphysics\mli');
     import com.comsol.model.*
     import com.comsol.model.util.*
     mphstart(2036)  
@@ -13,10 +13,10 @@ if importing
     
 end
 %% varying position and radius of tumours
-
+clear x y z R R1
 i=0;
 fprintf('start \n');
-R = 0.001:0.001:0.03; % RADIUS OF TUMOR
+R = 0.001:0.005:0.03; % RADIUS OF TUMOR
 iter = 1;
 for i = R % Radius of tumour 
     for r1 = 0.01:0.01:(0.072-i) % Radial position of tumour
@@ -32,26 +32,29 @@ for i = R % Radius of tumour
       end
     end
 end
-% Decreasing dataset size because it is exponentially large with the increase in no of tumors
+%% Decreasing dataset size because it is exponentially large with the increase in no of tumors
 m = length(x);
 rng(1) % setting seed
-random = rand(1,m)>0.7;
+random = rand(1,m)>0.9;
 x = x(random);
 y = y(random);
 z = z(random);
 R1 = R1(random);
 m = length(x);
-% Simulation start
+
+%%  Simulation start
 iter =0;
+clc
+T = [];
 for i = 1:m
 	for j = i:m
  		for k = j:m
                    iter = iter +1;
-
+                   fprintf('Iteration no %d /680 \n', iter);
                    model = Blockhemis2(x(i),y(i),z(i),R1(i),x(j),y(j),z(j),R1(j),x(k),y(k),z(k),R1(k));    
                    pd = mpheval(model,'T','dataset','ps1');
                    T(:,iter) =     pd.d1; % If shows error try pd.d1'
                    ModelUtil.clear ; % removing all models
-                 end
-         end
+        end
+     end
 end
