@@ -71,7 +71,7 @@ for i = 1:m
                    fprintf('Iteration no %d /%d \n', iter,totsim);
                    model = Blockhemis2(x(i),y(i),z(i),R1(i),x(j),y(j),z(j),R1(j),x(k),y(k),z(k),R1(k));    
                    pd = mphinterp(model,'T','dataset','ps1','coorderr','on'); % Tested with export as well, working fine
-                   T(:,iter) =  pd;%pd(~isnan(pd))'; %
+                   T(:,iter) =  pd(~isnan(pd))'; %removing Nan entries;
 %                    ModelUtil.clear ; % removing all models
         end
      end
