@@ -4,9 +4,12 @@ Check <a href ="https://docs.google.com/spreadsheets/d/1jZoKRMCWiBdC0zCo6taUhGxC
 Also check how the sim file parameters correspond to the parameters in the above sheet.<br> When it comes to exporting the results follow the below steps:
 <ol>
  <li> Go to export, data1 tab.
+  <li> For time selection select interpolated.
+   <li> For times enetr : range(20,1,40).
   <li> In section output set output destination, file name.
    <li> Press the export button.
  </ol>
+ Just a precaution don't delete the simulation file and the solutions after the results are generated.
 <br>
 <h1> Information about simulations</h1>
 <h2> Radiation</h2>
