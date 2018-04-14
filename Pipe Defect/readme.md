@@ -9,7 +9,7 @@ Also check how the sim file parameters correspond to the parameters in the above
   <li> In section output set output destination, file name.
    <li> Press the export button.
  </ol>
- One important note, in the dataset tab, parametric surface decrease the resolution to 20x20.
+ One important note, in the dataset tab, parametric surface decrease the resolution to <b>20x20</b>.
  Just a precaution don't delete the simulation file and the solutions after the results are generated. After you have completed a simulation go the above sheet and enter your status. 
 <br>
 <h1> Information about simulations</h1>
@@ -49,5 +49,5 @@ First checked if radiation played any significant role in simulations because it
  Hence as can be seen the heat transfer coefficient due to radiation is 10% of the conjugate heat transfer, even when the emissivity is as high as 0.85.
  
 <h3> Results </h3>
-From method A we, it was found that there werent any significant temperature difference. Hence it is concluded that radiation can be safely droped from simulations.
+From method A, it was found that there werent any significant temperature difference. Hence it is concluded that radiation can be safely droped from simulations.
 
