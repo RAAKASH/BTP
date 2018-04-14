@@ -1,7 +1,12 @@
 # Pipe Defect Project 
 
 Check <a href ="https://docs.google.com/spreadsheets/d/1jZoKRMCWiBdC0zCo6taUhGxCAXIs6Qd1isyRwSn-uFw/edit#gid=0"> Paramerters </a> for parameter list.
-Also check how the sim file parameters correspond to the parameters in the above sheet.
+Also check how the sim file parameters correspond to the parameters in the above sheet.<br> When it comes to exporting the results follow the below steps:
+<ol>
+ <li> Go to export, data1 tab.
+  <li> In section output set output destination, file name.
+   <li> Press the export button.
+ </ol>
 <br>
 <h1> Information about simulations</h1>
 <h2> Radiation</h2>
