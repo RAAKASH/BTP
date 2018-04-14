@@ -9,7 +9,7 @@ Also check how the sim file parameters correspond to the parameters in the above
   <li> In section output set output destination, file name.
    <li> Press the export button.
  </ol>
- Just a precaution don't delete the simulation file and the solutions after the results are generated.
+ Just a precaution don't delete the simulation file and the solutions after the results are generated. After you have completed a simulation go the above sheet and enter your status. 
 <br>
 <h1> Information about simulations</h1>
 <h2> Radiation</h2>
