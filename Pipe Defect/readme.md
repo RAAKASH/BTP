@@ -49,5 +49,5 @@ First checked if radiation played any significant role in simulations because it
  Hence as can be seen the heat transfer coefficient due to radiation is 10% of the conjugate heat transfer, even when the emissivity is as high as 0.85.
  
 <h3> Results </h3>
-From method A, it was found that there werent any significant temperature difference. Hence it is concluded that radiation can be safely droped from simulations.
+From method A, it was found that there werent any significant temperature difference. Hence it is concluded that radiation can be safely dropped from simulations.
 
