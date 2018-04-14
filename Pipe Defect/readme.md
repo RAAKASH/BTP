@@ -5,7 +5,7 @@ Also check how the sim file parameters correspond to the parameters in the above
 <ol>
  <li> Go to export, data1 tab.
   <li> For time selection select interpolated.
-   <li> For times enetr : range(20,1,40).
+   <li> For times enter : range(20,1,40).
   <li> In section output set output destination, file name.
    <li> Press the export button.
  </ol>
