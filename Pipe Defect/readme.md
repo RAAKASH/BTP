@@ -3,6 +3,10 @@
 Check <a href ="https://docs.google.com/spreadsheets/d/1jZoKRMCWiBdC0zCo6taUhGxCAXIs6Qd1isyRwSn-uFw/edit#gid=0"> Paramerters </a> for parameter list.
 Also check how the sim file parameters correspond to the parameters in the above sheet.<br> When it comes to exporting the results follow the below steps:
 <ol>
+ <li> Go to dataset tabin results, parametric surface.
+  <li> Change the theta range to pi/2 to pi.
+   <li> Change z coordinate formula to the negative of its current value.
+    <li> Go to reslutions tab and change theta resolution to 10, h resolution to 20.
  <li> Go to export, data1 tab.
   <li> For time selection select interpolated.
    <li> For times enter : range(20,1,40).
