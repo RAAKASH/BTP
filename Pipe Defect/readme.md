@@ -13,7 +13,7 @@ Also check how the sim file parameters correspond to the parameters in the above
   <li> In section output set output destination, file name.
    <li> Press the export button.
  </ol>
- One important note, in the dataset tab, parametric surface decrease the resolution to <b>20x20</b>.
+
  Just a precaution don't delete the simulation file and the solutions after the results are generated. After you have completed a simulation go the above sheet and enter your status. 
 <br>
 <h1> Information about simulations</h1>
