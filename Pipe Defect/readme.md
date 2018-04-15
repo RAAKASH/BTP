@@ -1,17 +1,21 @@
 # Pipe Defect Project 
 
-Check <a href ="https://docs.google.com/spreadsheets/d/1jZoKRMCWiBdC0zCo6taUhGxCAXIs6Qd1isyRwSn-uFw/edit#gid=0"> Paramerters </a> for parameter list.
-Also check how the sim file parameters correspond to the parameters in the above sheet.<br> When it comes to exporting the results follow the below steps:
+Check <a href ="https://docs.google.com/spreadsheets/d/1jZoKRMCWiBdC0zCo6taUhGxCAXIs6Qd1isyRwSn-uFw/edit#gid=0"> Paramerters </a> for parameter list.<br>
+Also check how the sim file parameters correspond to the parameters in the above sheet.<br> 
+<h2>Important steps to follow before running simulation</h2>
 <ol>
  <li> Go to dataset tabin results, parametric surface.
-  <li> Change the theta range to pi/2 to pi.
+  <li> Change the theta range from pi/2 to pi.
    <li> Change z coordinate formula to the negative of its current value.
     <li> Go to reslutions tab and change theta resolution to 10, h resolution to 20.
  <li> Go to export, data1 tab.
   <li> For time selection select interpolated.
    <li> For times enter : range(20,1,40).
-  <li> In section output set output destination, file name.
-   <li> Press the export button.
+  <li> In section output set output destination, file name (make it a unique file name).
+   <li> Now start entering the parameters in the sim file.
+ <li> Click run geomtery and meshing (the is very <b>important</b>), save your file.
+  <li> Run study, after obtaining results save the file once more.
+   <li> Finally export the data.
  </ol>
 
  Just a precaution don't delete the simulation file and the solutions after the results are generated. After you have completed a simulation go the above sheet and enter your status. 
