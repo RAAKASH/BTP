@@ -3,14 +3,14 @@ clc
 clear
 % To import or not
 
-importing = 0;
+importing = 1;
 if importing
-    ModelUtil.disconnect
+%     ModelUtil.disconnect
     fprintf('Importing, starting server \n');
     cd ('F:\Comsol\COMSOL53\Multiphysics\mli');
     import com.comsol.model.*
     import com.comsol.model.util.*
-    mphstart(2037)  
+%     mphstart(2036)  
     cd ('C:\Users\Aakash.R\Desktop\notes,lectures\8th sem\BTP\BTP\Tumor Project\Set1');
     
 end
@@ -41,8 +41,8 @@ clc
 fprintf('Reducing no of simulations\n');
 m = length(x);
 rng(1) % setting seed
-random1 = rand(1,m)>0.85;  % Random elimination, increase threshold to decrease simulation
-random2 = y>(0.072-0.03); % eliminating tumors deeper than 30mm
+random1 = rand(1,m)>0.95;  % Random elimination, increase threshold to decrease simulation
+random2 = y>((0.072^2-x.^2-y.^2).^0.5-0.03); % eliminating tumors deeper than 30mm
 random = (random1.*random2)==1; % Final list of parameters
 x = x(random);
 y = y(random);
@@ -64,14 +64,21 @@ fprintf('No of simulations for all tumors together is %d\n',totsim);
 iter =0;
 clc
 T = [];
+X = [];
 for i = 1:m
     for j = i:m
         for k = j:m
                    iter = iter +1;
                    fprintf('Iteration no %d /%d \n', iter,totsim);
-                   model = Blockhemis2(x(i),y(i),z(i),R1(i),x(j),y(j),z(j),R1(j),x(k),y(k),z(k),R1(k));    
-                   pd = mphinterp(model,'T','dataset','ps1','coorderr','on'); % Tested with export as well, working fine
-                   T(:,iter) =  pd(~isnan(pd))'; %removing Nan entries;
+                   model = Blockhemis2(x(i),y(i),z(i),R1(i),x(j),y(j),z(j),R1(j),x(k),y(k),z(k),R1(k));  
+                   if model==0
+                       iter=iter-1;
+%                        T(:,iter) =  -500;
+                   else
+                        X(:,iter) = [x(i),y(i),z(i),R1(i),x(j),y(j),z(j),R1(j),x(k),y(k),z(k),R1(k)]';
+                        pd = mphinterp(model,'T','dataset','ps1','coorderr','on'); % Tested with export as well, working fine
+                        T(:,iter) =  pd(~isnan(pd))'; % or pd
+                   end
 %                    ModelUtil.clear ; % removing all models
         end
      end
