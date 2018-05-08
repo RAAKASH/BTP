@@ -2,7 +2,7 @@
 <ol>
 <li>Go to Results -> Data Sets -> Exterior Walls 2 </li>
   <li>In the <b>Selection</b> sub menu remove everything except 6 and 7 </li>
-  ![alt text](https://raw.github.com/RAAKASH/BTP/blob/master/Pipe%20Defect/Exporting%20Data/Screenshot%20(971).png)
+  ![alt text](Screenshot%20(971).png)
 <li>Go to Export->Data1</li>
 <li> Change Data set to exterior walls 2</li>
 <li> In times put range(1,1,40)</li>
