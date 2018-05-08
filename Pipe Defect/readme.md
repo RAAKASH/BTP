@@ -4,18 +4,10 @@ Check <a href ="https://docs.google.com/spreadsheets/d/1jZoKRMCWiBdC0zCo6taUhGxC
 Also check how the sim file parameters correspond to the parameters in the above sheet.<br> 
 <h2>Important steps to follow before running simulation</h2>
 <ol>
- <li> Go to dataset tabin results, parametric surface.
-  <li> Change the theta range from pi/2 to pi.
-   <li> Change z coordinate formula to the negative of its current value.
-    <li> Go to reslutions tab and change theta resolution to 10, h resolution to 20.
- <li> Go to export, data1 tab.
-  <li> For time selection select interpolated.
-   <li> For times enter : range(20,1,40).
-  <li> In section output set output destination, file name (make it a unique file name).
-   <li> Now start entering the parameters in the sim file.
+ <li> Enter the parameters in the sim file.
  <li> Click run geomtery and meshing (the is very <b>important</b>), save your file.
   <li> Run study, after obtaining results save the file once more.
-   <li> Finally export the data.
+ <li> For exporting data refer <b>Exporting data</b> sub folder.
  </ol>
 
  Just a precaution don't delete the simulation file and the solutions after the results are generated. After you have completed a simulation go the above sheet and enter your status. 
