@@ -2,7 +2,7 @@
 <ol>
 <li>Go to Results -> Data Sets -> Exterior Walls 2 </li>
   <li>In the <b>Selection</b> sub menu remove everything except 6 and 7 </li>
-  ![ScreenShot](Screenshot(971).png)
+  ![ScreenShot](BTP/Pipe Defect/Exporting Data/Screenshot(971).png)
 <li>Go to Export->Data1</li>
 <li> Change Data set to exterior walls 2</li>
 <li> In times put range(1,1,40)</li>
